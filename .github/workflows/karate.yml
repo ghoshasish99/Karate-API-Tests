@@ -26,4 +26,6 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         name: Test Results
-        path: target/surefire-reports
+        path: | 
+          target/surefire-reports
+          target/cucumber-html-reports
