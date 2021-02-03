@@ -1,4 +1,4 @@
-package end2end.users;
+package features.users;
 
 import com.intuit.karate.junit5.Karate;
 
