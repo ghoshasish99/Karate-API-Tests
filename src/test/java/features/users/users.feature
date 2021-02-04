@@ -28,6 +28,7 @@ Feature: User functionalities
         | name          | job          |
         | #(randomName) | #(randomJob) |
         | #(randomName) | #(randomJob) |
+ 
   @Smoke  
   Scenario:  Fetch User  
     Given path 'api/users/2'
