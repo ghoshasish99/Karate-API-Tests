@@ -76,4 +76,25 @@ class TestParallel {
 
 }
 ```
+To run the full test set :
+```powershell
+mvn test
+```
+To run specific scenarios :
+Tag the scenarios with tag of your choice, like so :
+```gherkin
+@Smoke  
+  Scenario:  Fetch User  
+    Given path 'api/users/2'
+    When method get
+    Then status 200
+```
+Then run these scenarios using : 
+```powershell
+mvn test -Dkarate.options="--tags @Smoke"
+```
+To run scenarios other than the tagged ones :
+```powershell
+mvn test -Dkarate.options="--tags ~@Smoke"
+```
 For more information on Karate please refer [here.](https://github.com/intuit/karate)
