@@ -29,7 +29,7 @@ Feature: Registration
         | email                  | password     |
         | eve.holt@reqres.in     | #(randomPwd) |
         | tracey.ramos@reqres.in | #(randomPwd) |
-    
+  @Smoke  
   Scenario:  Unsuccessful Registration
     * def payload =
     """
